@@ -19,12 +19,14 @@ fn main() {
                 .takes_value(false),
         )
         .get_matches();
-
+    // that returns Vec inside Option so unwrapping this gives
+    //  vec
     let text = matches.values_of_lossy("text").unwrap();
+    // gives bool custom code here
     let omit_newline = match matches.is_present("omit_newline") {
         true => " ",
-        false => "\n"
+        false => "\n",
     };
+    // program output
     print!("{}{}", text.join(" "), omit_newline);
 }
-
