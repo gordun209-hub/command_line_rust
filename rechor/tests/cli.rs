@@ -7,6 +7,7 @@ use std::fs;
 type TestResult = Result<(), Box<dyn std::error::Error>>;
 
 #[test]
+//TODO learn how this works idk how to use it o em ci
 fn dies_no_args() -> TestResult {
     // use ? instead of Result::unwrap to unpack an Ok value or propagate Err
     let mut cmd = Command::cargo_bin("rechor")?;
@@ -45,21 +46,25 @@ fn hello2() -> TestResult {
         .stdout(expected);
     Ok(())
 }
-
+// arguments are args and expected file return type TestResult
 fn run(args: &[&str], expected_file: &str) -> TestResult {
+    // try to read the contents of the expected_file into a string
     let expected = fs::read_to_string(expected_file)?;
+    // attempt to run echor in the crate with the given args and assert stdout is expected value
     Command::cargo_bin("rechor")?
         .args(args)
         .assert()
         .success()
         .stdout(expected);
+    // if all goes fine return Okke type else zaten ustten hata gelir np
     Ok(())
 }
 #[test]
 fn hello3() -> TestResult {
     run(&["Hello", "there"], "tests/expected/hello2.txt")
 }
+// this fails  for some reason
 #[test]
 fn hello1_no_newline() -> TestResult {
-    run(&["Hello  there", "-n"], "tests/expected/hello1.n.txt")
+    run(&["Hello there", "-n"], "tests/expected/hello1.n.txt")
 }
