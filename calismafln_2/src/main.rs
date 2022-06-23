@@ -4,7 +4,12 @@ use crate::List::*;
 fn main() {
     // use_example();
     // c_like_enum();
-    linked_list_impl();
+    // linked_list_impl();
+    // const_ex()
+    // variable_bindngs();
+    // mutability()
+    scope()
+    
 }
 
 enum Status {
@@ -98,4 +103,60 @@ fn linked_list_impl() {
     list = list.prepend(3);
     println!("linked list has length : {}", list.len());
     println!("{}", list.stringify());
+}
+
+fn const_ex() {
+    static LANGUAGE: &str = "Rust";
+    const THRESHOLD: i32 = 10;
+    fn is_big(n: i32) -> bool {
+        n > THRESHOLD
+    }
+    let n = 16;
+
+    println!("This is {}", LANGUAGE);
+    println!("The treshold is {}", THRESHOLD);
+    println!("{} is {}", n, if is_big(n) { "big" } else { "small" });
+}
+
+fn variable_bindngs() {
+    let an_integer = 1u32;
+    let a_boolean = true;
+    let unit = ();
+    let copied_integer = an_integer;
+    println!("An Integer : {:?}", copied_integer);
+    println!("A boolean: {:?}", a_boolean);
+    println!("Meet the unit value: {:?}", unit);
+}
+
+fn mutability() {
+    let _immutable_binding = 1;
+    let mut mutable_binding = 1;
+
+    println!("Before mutation: {}", mutable_binding);
+
+    //Ok
+    mutable_binding += 1;
+    println!("After Mutation: {}", mutable_binding);
+}
+
+fn scope() {
+    let long_lived_binding = 1;
+    {
+        let short_lived_binding = 2;
+        println!("inner short: {}", short_lived_binding);
+    }
+    //Error! `short_lived_binding` does not exist in this scope
+    //println!("outer short: {}", short_lived_binding);
+    println!("outer long: {}", long_lived_binding);
+
+    let shadowed_bindng = 1;
+{
+        println!("before being shadowed: {}", shadowed_bindng);
+        let shadowed_bindng = "abd";
+        println!("shadowed in inner block : {}", shadowed_bindng);
+    }
+    println!("outside inner block: {}", shadowed_bindng);
+
+    let shadowed_bindng = 2;
+    println!("shadowed in outer block : {}", shadowed_bindng);
 }
