@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1978569-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1978569-1');
+</script>
+
+<script data-cfasync="false" type="text/javascript">
+  var freestar = freestar || {};
+  freestar.hitTime = Date.now();
+  freestar.queue = freestar.queue || [];
+  freestar.config = freestar.config || {};
+  freestar.debug = window.location.search.indexOf('fsdebug') === -1 ? false : true;
+  freestar.config.enabled_slots = [];
+  !function(a,b){var c=b.getElementsByTagName("script")[0],d=b.createElement("script"),e="https://a.pub.network/phoronix-com";e+=freestar.debug?"/qa/pubfig.min.js":"/pubfig.min.js",d.async=!0,d.src=e,c.parentNode.insertBefore(d,c)}(window,document);
+  freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) }
+</script>
+
+<script>
+freestar.config.disabledProducts = {
+    googleInterstitial: true
+};
+</script>
+		<title>Linux Hardware Reviews, Open-Source Benchmarks &amp; Linux Performance - Phoronix</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="phxcms-css/phoronix-10.css?2022">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<meta name="keywords" content="Phoronix, Linux Hardware Reviews, Linux hardware benchmarks, Linux server benchmarks, Linux benchmarking, Desktop Linux, Linux performance, Open Source graphics, Linux How To, Ubuntu benchmarks, Ubuntu hardware, Phoronix Test Suite" />
+		<meta name="Description" content="Phoronix is the leading technology website for Linux hardware reviews, open-source news, Linux benchmarks, open-source benchmarks, and computer hardware performance tests." />
+		<link rel="alternate" type="application/rss+xml" title="Phoronix" href="rss.php" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192" />
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@phoronix" />
+		<meta name="twitter:creator" content="@michaellarabel" />
+		<meta name="twitter:title" content="Linux Hardware Reviews, Open-Source Benchmarks &amp; Linux Performance" />
+		<meta name="og:title" content="Linux Hardware Reviews, Open-Source Benchmarks &amp; Linux Performance" />
+				<!-- PHXCMS-11 (phoronix.com) -->
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = 'phoronix.com';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org'
+    .concat('/choice/', 'UEFjU_w924fg3', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+    		
+	</head>
+	<body style="overflow: initial !important;">
+		<div style="text-align: center; overflow: hidden; background: #222;"><div align="center" id="phoronix_desktop_leaderboard_header">
+  <script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "phoronix_desktop_leaderboard_header", slotId: "phoronix_desktop_leaderboard_header" });
+  </script>
+</div>
+</div>		<div id="headerwrap">
+			<div class="wcontainer defpadding">
+				<a href="?page=home"><img id="logo" alt="Phoronix" src="/phxcms7-css/phoronix.png" style="height: 40px; margin-top: 5px;margin-left: 5px;" /></a>
+				<div id="headerright">
+					<div id="social">
+					    <a href="https://www.phoronix.com/rss.php" class="icon-rss"></a>
+					    <a href="https://twitter.com/Phoronix" class="icon-twitter"></a>
+					    <a href="https://www.facebook.com/Phoronix" class="icon-facebook"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="litemenu">
+		    <ul>
+		        <li><a href="?page=phoronix_articles">Articles &amp; Reviews</a></li>
+		        <li><a href="?page=phoronix_news">News Archive</a></li>
+		        <li><a href="https://www.phoronix.com/forums/">Forums</a></li>
+		        <li><a href="?page=phoronix_premium">Premium</a></li>		        <li class="categ icon-angle-circled-down"><span> Categories</span></li>
+		        <li><a href="?page=category&amp;item=Computers">Computers</a></li>
+				<li><a href="?page=category&amp;item=Display+Drivers">Display Drivers</a></li>
+				<li><a href="?page=category&amp;item=Graphics+Cards">GPUs / Graphics Cards</a></li>
+				<li><a href="?page=category&amp;item=Linux+Gaming">Linux Gaming</a></li>
+				<li><a href="?page=category&amp;item=Memory">Memory</a></li>
+				<li><a href="?page=category&amp;item=Motherboards">Motherboards</a></li>
+				<li><a href="?page=category&amp;item=Processors">CPUs / Processors</a></li>
+				<li><a href="?page=category&amp;item=Software">Software</a></li>
+				<li><a href="?page=category&amp;item=Storage">Storage</a></li>
+				<li><a href="?page=category&amp;item=Operating+Systems">Operating Systems</a></li>
+				<li><a href="?page=category&amp;item=Peripherals">Peripherals</a></li>
+				<li id="closelid">Close</li>
+		    </ul>		    
+		</div>
+		<div id="menuwrap">
+			<div class="wcontainer">
+				<ul id="linklist">
+					<li id="menubutton"><span class="icon-menu"></span>
+					</li>
+					<li class="menulink">
+						<a class="linknode" href="?page=phoronix_articles">Articles &amp; Reviews</a>
+					</li>
+					<li class="menulink">
+						<a class="linknode" href="?page=phoronix_news">News Archive</a>
+					</li>
+					<li class="menulink">
+						<a class="linknode" href="https://www.phoronix.com/forums/">Forums</a>
+					</li>
+					<li class="menulink">
+						<a class="linknode" href="?page=phoronix_premium">Premium</a>
+					</li>					<li id="categories-link" class="menulink">
+						<span class="menunolink icon-angle-circled-down"> Categories</span>
+						<div id="categories-list">
+							<div id="categories-content">
+								<a href="?page=category&amp;item=Computers">Computers</a>
+								<a href="?page=category&amp;item=Graphics+Cards">GPUs / Graphics Cards</a>
+								<a href="?page=category&amp;item=Linux+Gaming">Linux Gaming</a>
+								<a href="?page=category&amp;item=Memory">Memory</a>
+								<a href="?page=category&amp;item=Motherboards">Motherboards</a>
+								<a href="?page=category&amp;item=Processors">CPUs / Processors</a>
+								<a href="?page=category&amp;item=Software">Software</a>
+								<a href="?page=category&amp;item=Storage">Storage</a>
+								<a href="?page=category&amp;item=Operating+Systems">Operating Systems</a>
+								<a href="?page=category&amp;item=Peripherals">Peripherals</a>
+							</div>
+						</div>
+					</li>
+					<li id="searchbox">
+						<div id="search">
+							<form action="https://www.google.com" id="cse-search-box" target="_blank">
+							  <div>
+							    <input type="hidden" name="cx" value="partner-pub-0253814508491313:1305299758" />
+							    <input type="hidden" name="ie" value="UTF-8" />
+							    <input type="text" name="q" />
+							    <input type="submit" name="sa" value="Search" />
+							  </div>
+							</form>
+
+							<script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="content-bg">
+			<div id="content">
+				<div id="main-wrap">
+					<div id="main">
+						<div style="text-align: center; overflow: hidden; margin-bottom: 30px;">
+							<div align="center" id="phoronix_desktop_leaderboard_atf">
+  <script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "phoronix_desktop_leaderboard_atf", slotId: "phoronix_desktop_leaderboard_atf" });
+  </script>
+</div>
+
+						</div>
+						<!-- google_ad_section_start --><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=R600g-NIR-Rewrite-Ups-Perf">Rewritten NIR Code For Old Radeon &quot;R600&quot; Linux Driver Improves Performance In 2022</a></header>
+							<a href="?page=news_item&amp;px=R600g-NIR-Rewrite-Ups-Perf"><img src="https://www.phoronix.net/image.php?id=amd_comp_oktoberfest&image=amd_radeon_6950_sml" alt="Rewritten NIR Code For Old Radeon &quot;R600&quot; Linux Driver Improves Performance In 2022" class="home_icons" /></a> <div class="details">3 Hours Ago - <a href="?page=news_topic&amp;q=Radeon">Radeon</a> - NIR Backend Rewrite<span class="comments"> - <a href="/forums/node/1330087">4 Comments</a></span></div><p>The open-source Mesa "R600" Gallium3D driver for supporting AMD graphics processors prior to the Radeon HD 7000 series, a rewritten NIR back-end has been published that enables better performance and proper FP64 usage.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=AMD-Vega-HIP-Blender-Patch">AMD Posts Patch Enabling Vega APU/GPU Support For Blender's HIP Backend</a></header>
+							<a href="?page=news_item&amp;px=AMD-Vega-HIP-Blender-Patch"><img src="https://www.phoronix.net/image.php?id=2022&image=blender_vega_hip_sml" alt="AMD Posts Patch Enabling Vega APU/GPU Support For Blender's HIP Backend" class="home_icons" /></a> <div class="details">3 Hours Ago - <a href="?page=news_topic&amp;q=Radeon">Radeon</a> - Vega HIP on Blender<span class="comments"> - <a href="/forums/node/1330085">6 Comments</a></span></div><p>With the AMD Radeon "HIP" acceleration in Blender 3.2 with the Cycles back-end, an unfortunate early limitation is that this is limited to just AMD RDNA2 (Radeon RX 6000 series) graphics processors while prior generation RDNA1 GPUs have issues with some textures like those used in the benchmarks. This week though AMD did post a new patch for Blender enabling HIP support on Windows and Linux for Vega/GFX9 graphics.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=GNOME-Deep-Color-2022-Progress">New Progress Being Made On Deep Color Support For GNOME Wayland Sessions</a></header>
+							<a href="?page=news_item&amp;px=GNOME-Deep-Color-2022-Progress"><img src="https://www.phoronix.net/image.php?id=2022&image=deep_color_deeper_sml" alt="New Progress Being Made On Deep Color Support For GNOME Wayland Sessions" class="home_icons" /></a> <div class="details">4 Hours Ago - <a href="?page=news_topic&amp;q=GNOME">GNOME</a> - GNOME Deep Color<span class="comments"> - <a href="/forums/node/1330083">2 Comments</a></span></div><p>One of the multi-year efforts in the GNOME Wayland camp has been on deep color support and it's been of interest to Ubuntu developers among other parties. After not hearing about any progress on GNOME Wayland deep color support in a while, some progress is now being made.</p>
+							
+						</article><div style="text-align: center; overflow: hidden; margin-bottom: 10px;"><div align="center" id="phoronix_leaderboard_incontent_1">
+  <script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "phoronix_leaderboard_incontent_1", slotId: "phoronix_leaderboard_incontent_1" });
+  </script>
+</div>
+</div><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Linux-5.19-FIPS-Signature">Linux 5.19 Makes Its Signature Verification Code FIPS Compliant</a></header>
+							<div class="details">4 Hours Ago - <a href="?page=news_topic&amp;q=Linux+Security">Linux Security</a> - FIPS Compliant Signature Verification<span class="comments"> - <a href="/forums/node/1330079">Add A Comment</a></span></div><p>Merged yesterday into Linux 5.19 as a post merge window change is making the kernel's signature verification code FIPS compliant.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=AMDVLK-2022.Q2.3-Released">AMDVLK 2022.Q2.3 Vulkan Driver Released With Some Performance Optimizations</a></header>
+							<div class="details">5 Hours Ago - <a href="?page=news_topic&amp;q=Radeon">Radeon</a> - AMDVLK 2022.Q2.3<span class="comments"> - <a href="/forums/node/1330075">Add A Comment</a></span></div><p>AMD today released a new update to AMDVLK, their official open-source Radeon Vulkan driver for Linux systems that is derived from their internal Vulkan driver sources while plumbed to use the open-source LLVM AMDGPU shader compiler back-end. For Linux gamers this driver doesn't remain as popular as Mesa's RADV but the update today does deliver on some game performance optimizations.</p>
+							
+						</article><div align="center" id="phoronix_leaderboard_incontent_2">
+  <script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "phoronix_leaderboard_incontent_2", slotId: "phoronix_leaderboard_incontent_2" });
+  </script>
+</div>
+<h2>21 June</h2><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Chrome-103-Released">Chrome 103 Released With Deflate-Raw Compression Format, Local Font Access</a></header>
+							<a href="?page=news_item&amp;px=Chrome-103-Released"><img src="https://www.phoronix.net/image.php?id=2022&image=chrome_103_sml" alt="Chrome 103 Released With Deflate-Raw Compression Format, Local Font Access" class="home_icons" /></a> <div class="details">21 June 07:07 PM EDT - <a href="?page=news_topic&amp;q=Google">Google</a> - Chrome 103<span class="comments"> - <a href="/forums/node/1330019">12 Comments</a></span></div><p>Google today released Chrome 103 as the newest monthly feature update to its cross-platform web browser.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=PCI-Express-7.0-Spec">PCI Express 7.0 Specification Announced - Hitting 128 GT/s In 2025</a></header>
+							<a href="?page=news_item&amp;px=PCI-Express-7.0-Spec"><img src="https://www.phoronix.net/image.php?id=2022&image=pcie_70_1_sml" alt="PCI Express 7.0 Specification Announced - Hitting 128 GT/s In 2025" class="home_icons" /></a> <div class="details">21 June 02:30 PM EDT - <a href="?page=news_topic&amp;q=Standards">Standards</a> - PCIe 7.0<span class="comments"> - <a href="/forums/node/1329972">24 Comments</a></span></div><p>The PCI SIG today announced the PCI Express 7.0 specification that doubles the data rate to 128 GT/s and should be released to members in 2025.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Intel-oneAPI-Blender-3.3-On">Intel Still Hoping To Have oneAPI/SYCL GPU Acceleration In Blender 3.3</a></header>
+							<a href="?page=news_item&amp;px=Intel-oneAPI-Blender-3.3-On"><img src="https://www.phoronix.net/image.php?id=2022&image=intel_cycles_oneapi_sml" alt="Intel Still Hoping To Have oneAPI/SYCL GPU Acceleration In Blender 3.3" class="home_icons" /></a> <div class="details">21 June 02:00 PM EDT - <a href="?page=news_topic&amp;q=Intel">Intel</a> - Blender 3.3 + Intel oneAPI Goal<span class="comments"> - <a href="/forums/node/1329955">3 Comments</a></span></div><p>To complement the AMD HIP, NVIDIA CUDA, and NVIDIA OptiX acceleration in Blender 3.2, Intel engineers are still hoping to have their Intel oneAPI SYCL support ready to premiere in Blender 3.3 for Intel GPU-based Cycles acceleration with Intel integrated and discrete graphics processors.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Vulkan-Mesh-Shaders-Details">Vulkan Mesh Shaders To Closely Mirror Direct3D 12 Capabilities</a></header>
+							<a href="?page=news_item&amp;px=Vulkan-Mesh-Shaders-Details"><img src="https://www.phoronix.net/image.php?id=2022&image=d3d12_mesh_shader_sml" alt="Vulkan Mesh Shaders To Closely Mirror Direct3D 12 Capabilities" class="home_icons" /></a> <div class="details">21 June 01:30 PM EDT - <a href="?page=news_topic&amp;q=Mesa">Mesa</a> - Vulkan Mesh Shaders<span class="comments"> - <a href="/forums/node/1329944">Add A Comment</a></span></div><p>It's been known for a while that The Khronos Group and its Vulkan working group has been working on a cross-vendor extension for mesh shaders akin to what is offered already by Direct3D 12 and with NVIDIA by their VK_NV_mesh_shader extension. A few more details about the forthcoming Vulkan mesh shader support were detailed today.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Rust-For-Linux-5.20-Possible">Linus Torvalds: Rust For The Kernel Could Possibly Be Merged For Linux 5.20</a></header>
+							<a href="?page=news_item&amp;px=Rust-For-Linux-5.20-Possible"><img src="https://www.phoronix.net/image.php?id=2022&image=open_source_summit_sml" alt="Linus Torvalds: Rust For The Kernel Could Possibly Be Merged For Linux 5.20" class="home_icons" /></a> <div class="details">21 June 11:49 AM EDT - <a href="?page=news_topic&amp;q=Linux+Kernel">Linux Kernel</a> - Rust For Linux<span class="comments"> - <a href="/forums/node/1329923">40 Comments</a></span></div><p>Speaking this morning at The Linux Foundation's Open-Source Summit, Linus Torvalds talked up the possibilities of Rust within the Linux kernel and that it could be landing quite soon -- possibly even for the next kernel cycle.</p>
+							
+						</article><article class="important" style="clear: both;">
+							<header><a href="/vr.php?view=31229">Total War: WARHAMMER III Linux Performance Across 24 NVIDIA / AMD GPUs</a></header>
+							<a href="/vr.php?view=31229"><img src="https://www.phoronix.net/image.php?id=totalwar-warhammer3-linux&image=tww3_linux_0_sml" alt="Total War: WARHAMMER III Linux Performance Across 24 NVIDIA / AMD GPUs" class="home_icons" /></a> <div class="details">21 June 09:00 AM EDT - <a href="?page=category&amp;item=Linux+Gaming">Linux Gaming</a><span class="comments"> - <a href="/forums/node/1329885">19 Comments</a></span></div><p>Last week Feral Interactive released Total War: WARHAMMER III for Linux as a native port of this game that debuted earlier this year on Windows. This latest Total War game port to Linux by Feral relies on the Vulkan API for graphics and comes with a modest system requirements. For those curious about the performance of this latest high profile game port, here are benchmarks across 24 different AMD Radeon and NVIDIA GeForce graphics cards on Ubuntu Linux.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=RISC-V-2022-New-Specs">RISC-V Announces Initial Batch Of 2022 Specifications: SBI, UEFI, Zmmul, E-Trace</a></header>
+							<div class="details">21 June 08:37 AM EDT - <a href="?page=news_topic&amp;q=RISC-V">RISC-V</a> - RISC-V 2022 <span class="comments"> - <a href="/forums/node/1329879">7 Comments</a></span></div><p>RISC-V International announced their first batch of new specifications for 2022. This includes approving of Efficient Trace for RISC-V (E-Trace), RISC-V Supervisor Binary Interface (SBI), RISC-V UEFI, and RISC-V Zmmul multiply-only extensions.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=ThinkSilicon-NEOX-RISC-V-GPU">Think Silicon Shows Off First RISC-V 3D GPU</a></header>
+							<a href="?page=news_item&amp;px=ThinkSilicon-NEOX-RISC-V-GPU"><img src="https://www.phoronix.net/image.php?id=2022&image=thinksilicon_neox_sml" alt="Think Silicon Shows Off First RISC-V 3D GPU" class="home_icons" /></a> <div class="details">21 June 07:28 AM EDT - <a href="?page=news_topic&amp;q=RISC-V">RISC-V</a> - NEOX G-Series + A-Series<span class="comments"> - <a href="/forums/node/1329872">32 Comments</a></span></div><p>At the Embedded World conference happening this week in Nürnberg, Think Silicon is showing off the first production RISC-V 3D GPU design.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=AMD-Ryzen-Embedded-R2000">AMD Announces Ryzen Embedded R2000 Series With Zen+ Cores, Radeon Graphics</a></header>
+							<a href="?page=news_item&amp;px=AMD-Ryzen-Embedded-R2000"><img src="https://www.phoronix.net/image.php?id=2022&image=ryzen_embedded_r2000_sml" alt="AMD Announces Ryzen Embedded R2000 Series With Zen+ Cores, Radeon Graphics" class="home_icons" /></a> <div class="details">21 June 06:13 AM EDT - <a href="?page=news_topic&amp;q=AMD">AMD</a> - Ryzen Embedded R2000 Series<span class="comments"> - <a href="/forums/node/1329860">11 Comments</a></span></div><p>AMD is using the Embedded World conference in Nürnberg to launch the Ryzen Embedded R2000 series for industrial use-cases along with IoT, thin clients, and edge computing.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Meta-Developing-Clang-IR-CIR">Meta Developing A New IR For LLVM's Clang C/C++ Compiler With Better Speed, Security</a></header>
+							<a href="?page=news_item&amp;px=Meta-Developing-Clang-IR-CIR"><img src="https://www.phoronix.net/image.php?id=2022&image=clang_ir_cir_sml" alt="Meta Developing A New IR For LLVM's Clang C/C++ Compiler With Better Speed, Security" class="home_icons" /></a> <div class="details">21 June 05:28 AM EDT - <a href="?page=news_topic&amp;q=LLVM">LLVM</a> - Clang IR<span class="comments"> - <a href="/forums/node/1329852">6 Comments</a></span></div><p>Meta (Facebook) engineers on Monday announced CIR, a proposed new intermediate representation (IR) for LLVM's Clang C/C++ compiler front-end that is based on the MLIR representation.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=PowerVR-Vulkan-TI-AM62">PowerVR Open-Source Vulkan Driver Adds Support For The TI AM62 SoC</a></header>
+							<a href="?page=news_item&amp;px=PowerVR-Vulkan-TI-AM62"><img src="https://www.phoronix.net/image.php?id=2022&image=ti_am62_sml" alt="PowerVR Open-Source Vulkan Driver Adds Support For The TI AM62 SoC" class="home_icons" /></a> <div class="details">21 June 05:05 AM EDT - <a href="?page=news_topic&amp;q=Mesa">Mesa</a> - PVR Vulkan For TI AM62<span class="comments"> - <a href="/forums/node/1329851">Add A Comment</a></span></div><p>Earlier this month the TI Sitara AM62 series SoCs were announced for low-power IoT, AI, and other use-cases. While being powered by uninteresting Arm Cortex-A53 cores, with the AM625 SoC part of this new Sitara line-up there is an Imagination PowerVR GPU and that is now being enabled by the new open-source Vulkan driver.</p>
+							
+						</article><h2>20 June</h2><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Meta-Transparent-TMO">Meta's Transparent Memory Offloading Saves Them 20~32% Of Memory Per Linux Server</a></header>
+							<a href="?page=news_item&amp;px=Meta-Transparent-TMO"><img src="https://www.phoronix.net/image.php?id=2022&image=meta_tmo_sml" alt="Meta's Transparent Memory Offloading Saves Them 20~32% Of Memory Per Linux Server" class="home_icons" /></a> <div class="details">20 June 06:15 PM EDT - <a href="?page=news_topic&amp;q=Linux+Kernel">Linux Kernel</a> - Transparent Memory Offloading<span class="comments"> - <a href="/forums/node/1329826">25 Comments</a></span></div><p>Meta's engineering team today published an interesting blog post about Transparent Memory Offloading (TMO) as a new Linux kernel feature they developed that is already used in production on Facebook/Meta servers. Within Meta's data centers this TMO functionality is saving 20~32% memory per server across their millions of servers.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=AlmaLinux-Build-System">RHEL-Based AlmaLinux Announces &quot;ALBS&quot; Access For Its Public Build System</a></header>
+							<a href="?page=news_item&amp;px=AlmaLinux-Build-System"><img src="https://www.phoronix.net/image.php?id=2022&image=almalinux_albs_1_sml" alt="RHEL-Based AlmaLinux Announces &quot;ALBS&quot; Access For Its Public Build System" class="home_icons" /></a> <div class="details">20 June 02:20 PM EDT - <a href="?page=news_topic&amp;q=Operating+Systems">Operating Systems</a> - AlmaLinux Build System<span class="comments"> - <a href="/forums/node/1329782">7 Comments</a></span></div><p>AlmaLinux today made public ALBS, the AlmaLinux Build System used to construct the recent releases of AlmaLinux 8.6 and AlmaLinux 9.0 across all supported architectures.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=AMD-PRO-5000-WX-Update">AMD PRO 5000 WX Series Coming To More System Integrators, DIY Market Later This Year</a></header>
+							<a href="?page=news_item&amp;px=AMD-PRO-5000-WX-Update"><img src="https://www.phoronix.net/image.php?id=amd-threadripper-pro5000&image=amd_trpro5000_4_sml" alt="AMD PRO 5000 WX Series Coming To More System Integrators, DIY Market Later This Year" class="home_icons" /></a> <div class="details">20 June 11:52 AM EDT - <a href="?page=news_topic&amp;q=AMD">AMD</a> - Threadripper PRO 5000 WX Series<span class="comments"> - <a href="/forums/node/1329761">7 Comments</a></span></div><p>After announcing the Threadripper PRO 5000 WX series back in March and with Lenovo being their launch partner for these Zen 3 Ryzen Threadripper CPUs, AMD today shared an update on availability.</p>
+							
+						</article><article class="important" style="clear: both;">
+							<header><a href="/vr.php?view=31221">Amazon Graviton3 Compiler Tuning Benchmarks For The Arm Neoverse-V1 Cores</a></header>
+							<a href="/vr.php?view=31221"><img src="https://www.phoronix.net/image.php?id=graviton3-sve-gcc12&image=graviton3_sve_compiler_sml" alt="Amazon Graviton3 Compiler Tuning Benchmarks For The Arm Neoverse-V1 Cores" class="home_icons" /></a> <div class="details">20 June 08:58 AM EDT - <a href="?page=category&amp;item=Software">Software</a><span class="comments"> - <a href="/forums/node/1329720">7 Comments</a></span></div><p>Stemming from my recent AWS Graviton3 benchmarks and looking at Graviton3 against Intel Xeon and AMD EPYC, a number of Phoronix readers expressed interest in seeing some compiler tuning benchmarks for the Graviton3 around its Arm Neoverse-V1 cores with SVE support. Here are some benchmarks for those interested in the compiler tuning impact for this new high performance Arm cloud processor.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Intel-GNA-To-DRM-Driver">Intel Turning Their Gaussian &amp; Neural Accelerator Into A DRM Driver</a></header>
+							<div class="details">20 June 06:26 AM EDT - <a href="?page=news_topic&amp;q=Intel">Intel</a> - Intel GNA To DRM<span class="comments"> - <a href="/forums/node/1329699">2 Comments</a></span></div><p>Found with Intel mobile SoCs since Ice Lake is their Gaussian and Neural Accelerator "GNA" that has been supported by an out-of-tree Linux driver while over the past year Intel engineers have been working to upstream an Intel GNA Linux driver into the mainline kernel. They have most recently been adapting this GNA driver to become a Direct Rendering Manager (DRM) driver alongside their Intel i915 kernel graphics driver and other conventional graphics drivers.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=PowerVR-Hard-Coding-Support">Imagination's PowerVR Open-Source Vulkan Driver Lands Hard Coding Infrastructure</a></header>
+							<a href="?page=news_item&amp;px=PowerVR-Hard-Coding-Support"><img src="https://www.phoronix.net/image.php?id=2022&image=powervr_rogue_sml" alt="Imagination's PowerVR Open-Source Vulkan Driver Lands Hard Coding Infrastructure" class="home_icons" /></a> <div class="details">20 June 06:11 AM EDT - <a href="?page=news_topic&amp;q=Mesa">Mesa</a> - Shader Blobs<span class="comments"> - <a href="/forums/node/1329696">1 Comment</a></span></div><p>Due to the early state of Imagination's PowerVR Rogue open-source Vulkan driver within Mesa a "hard coding" infrastructure has been added for helping to load hard-coded graphics/compute shaders into this driver until its compiler is far enough along to be useful and mark this infrastructure as unnecessary/redundant.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=X-Windows-System-38">X Window System Turns 38 Years Old</a></header>
+							<div class="details">20 June 05:42 AM EDT - <a href="?page=news_topic&amp;q=X.Org">X.Org</a> - Happy Birthday X<span class="comments"> - <a href="/forums/node/1329694">97 Comments</a></span></div><p>This weekend marked 38 years since the inaugural release of the X Window System at MIT.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Meson-0.63-rc1">Meson 0.63.0rc1 Brings Support For Mold, Improvements For Windows Cross-Compiling</a></header>
+							<div class="details">20 June 05:14 AM EDT - <a href="?page=news_topic&amp;q=Programming">Programming</a> - Meson 0.63<span class="comments"> - <a href="/forums/node/1329691">2 Comments</a></span></div><p>Sunday marked the release of the Meson 0.63 release candidate for this increasingly popular open-source, cross-platform build system.</p>
+							
+						</article><h2>19 June</h2><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Linux-5.19-rc3">Linus Torvalds Releases Linux 5.19-rc3 Father's Day Kernel</a></header>
+							<div class="details">19 June 06:03 PM EDT - <a href="?page=news_topic&amp;q=Linux+Kernel">Linux Kernel</a> - Linux 5.19-rc3<span class="comments"> - <a href="/forums/node/1329658">Add A Comment</a></span></div><p>Linus Torvalds spent some of Father's Day today merging last minute pull requests for the week and issuing Linux 5.19-rc3 as the newest weekly test kernel.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=GhostBSD-22.06.15-Released">GhostBSD 22.06.15 Brings Improved NVIDIA Driver Handling, Better Broadcom WiFi Detection</a></header>
+							<a href="?page=news_item&amp;px=GhostBSD-22.06.15-Released"><img src="https://www.phoronix.net/image.php?id=2022&image=ghostbsd_sml" alt="GhostBSD 22.06.15 Brings Improved NVIDIA Driver Handling, Better Broadcom WiFi Detection" class="home_icons" /></a> <div class="details">19 June 11:32 AM EDT - <a href="?page=news_topic&amp;q=BSD">BSD</a> - GhostBSD 22.06.15<span class="comments"> - <a href="/forums/node/1329629">1 Comment</a></span></div><p>Out this weekend is a new version of GhostBSD, the desktop-focused operating system built atop a FreeBSD base and catering to the MATE desktop environment.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=EPEL-Stats-Rocky-Linux-Surge">EPEL Statistics Show Recent Surge In Rocky Linux Usage Past AlmaLinux, CentOS Stream</a></header>
+							<a href="?page=news_item&amp;px=EPEL-Stats-Rocky-Linux-Surge"><img src="https://www.phoronix.net/image.php?id=2022&image=rocky_epel_2_sml" alt="EPEL Statistics Show Recent Surge In Rocky Linux Usage Past AlmaLinux, CentOS Stream" class="home_icons" /></a> <div class="details">19 June 06:48 AM EDT - <a href="?page=news_topic&amp;q=Operating+Systems">Operating Systems</a> - Extra Packages For Enterprise Linux<span class="comments"> - <a href="/forums/node/1329579">22 Comments</a></span></div><p>Statistics published by Fedora for the Extra Packages for Enterprise Linux (EPEL) usage point to a recent surge in Rocky Linux usage -- at least for those with EPEL enabled -- and at least recently appears to surpass the usage for the likes of CentOS Stream, AlmaLinux, and even the RHEL usage with EPEL enabled.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=EXT4-No-Delalloc-Perf-Fix">EXT4 Has A Nice One-Line Performance Fix For Cases When Delayed Allocation Is Disabled</a></header>
+							<a href="?page=news_item&amp;px=EXT4-No-Delalloc-Perf-Fix"><img src="https://www.phoronix.net/image.php?id=2022&image=ext4_nodelalloc_fix_sml" alt="EXT4 Has A Nice One-Line Performance Fix For Cases When Delayed Allocation Is Disabled" class="home_icons" /></a> <div class="details">19 June 06:00 AM EDT - <a href="?page=news_topic&amp;q=Linux+Storage">Linux Storage</a> - EXT4 Performance Fix<span class="comments"> - <a href="/forums/node/1329563">1 Comment</a></span></div><p>When an EXT4 file-system is running low on free space (or when toggled via the "nodelalloc" mount option), EXT4's delayed allocation mode can be disabled. This can result in a significant performance hit but now a patch is pending for what should land in Linux 5.20 with recovering that performance when delayed allocation is disabled.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Git-2.37-rc1-Released">Git 2.37-rc1 Released With &quot;git -v&quot; &amp; &quot;git -h&quot; Convenient Options</a></header>
+							<div class="details">19 June 05:42 AM EDT - <a href="?page=news_topic&amp;q=Programming">Programming</a> - Git 2.37<span class="comments"> - <a href="/forums/node/1329568">3 Comments</a></span></div><p>Following an initial rc0 tag earlier in the week, Git 2.37-rc1 was released on Friday for helping to facilitate testing for the next version of this leading, open-source distributed revision control system.</p>
+							
+						</article><h2>18 June</h2><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Arch-Linux-Bizarre-Zstd">The Bizarre Case Of Zstd's Very Slow Performance On Arch Linux</a></header>
+							<div class="details">18 June 07:40 PM EDT - <a href="?page=news_topic&amp;q=Arch+Linux">Arch Linux</a> - Arch Linux + Zstd = Bad?<span class="comments"> - <a href="/forums/node/1329499">77 Comments</a></span></div><p>Yesterday I posted benchmarks of six Linux distributions on the HP Dev One, the exciting new Linux laptop launched by HP in collaboration with System76 that is using their Pop!_OS distribution. From those benchmarks one of the bizarre findings was that the Zstd compression performance on Arch Linux simply sucked, but some interested developers dove in and found the rather bizarre culprit why their Zstd performance is so poor in relation to other Linux distributions on the same version.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Mold-1.3-Released">Mold 1.3 High Speed Linker Released With LTO Improvements</a></header>
+							<div class="details">18 June 07:45 AM EDT - <a href="?page=news_topic&amp;q=Programming">Programming</a> - Mold 1.3<span class="comments"> - <a href="/forums/node/1329452">6 Comments</a></span></div><p>Mold 1.3 has been released today as the newest version of this high-speed linker that serves as an alternative to GNU Gold and LLVM's LLD.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=AOM-AV1-3.4-Released">AOM AV1 v3.4 Encoder Brings Better Performance</a></header>
+							<div class="details">18 June 07:36 AM EDT - <a href="?page=news_topic&amp;q=Multimedia">Multimedia</a> - AOM-AV1 3.4<span class="comments"> - <a href="/forums/node/1329449">4 Comments</a></span></div><p>Google engineers on Friday released AOM AV1 v3.4 as the newest version of this open-source AV1 CPU-based video encoder.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Manjaro-21.3-Released">Arch-Based Manjaro Linux 21.3 Released</a></header>
+							<div class="details">18 June 06:16 AM EDT - <a href="?page=news_topic&amp;q=Arch+Linux">Arch Linux</a> - Manjaro 21.3<span class="comments"> - <a href="/forums/node/1329437">32 Comments</a></span></div><p>For fans of the desktop-minded, easy-to-use Manjaro Linux distribution that is built atop Arch, the Manjaro 21.3 "Ruah" release was christened this weekend.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Linux-5.20-XP-PEN-Deco-L">Linux 5.20 To Support The XP-PEN Deco L Drawing Tablet</a></header>
+							<div class="details">18 June 05:45 AM EDT - <a href="?page=news_topic&amp;q=Hardware">Hardware</a> - XP-PEN Deco L<span class="comments"> - <a href="/forums/node/1329433">5 Comments</a></span></div><p>The XP-PEN Deco L is a recently launched graphics drawing tablet with its Linux support backed by a user-space binary blob package. But thanks to some USB reverse engineering from a community developer and discovering the hardware's "magic data" needed for initialization, this drawing tablet will be supported by a proper kernel driver in the next Linux kernel cycle.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Plasma-5.26-Crisper-XWayland">KDE Plasma 5.26 To Allow Crisper XWayland Apps With New Scaling Option</a></header>
+							<div class="details">18 June 04:49 AM EDT - <a href="?page=news_topic&amp;q=KDE">KDE</a> - KDE Plasma 5.26<span class="comments"> - <a href="/forums/node/1329420">40 Comments</a></span></div><p>While this week marked the release of KDE Plasma 5.25, already there is a big shiny feature queued up for Plasma 5.26 to benefit those running the KDE Plasma Wayland session and relying on XWayland for X11 app compatibility.</p>
+							
+						</article><h2>17 June</h2><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Wine-7.11-Released">Wine 7.11 Released With Zero-Copy Support For GStreamer</a></header>
+							<div class="details">17 June 04:17 PM EDT - <a href="?page=news_topic&amp;q=WINE">WINE</a> - Wine 7.11<span class="comments"> - <a href="/forums/node/1329366">20 Comments</a></span></div><p>Wine 7.11 is out as the newest version of this open-source software for enjoying Windows games and applications under Linux and other platforms.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=NVIDIA-515.49.05-Linux-Beta">NVIDIA Vulkan Beta Driver Updated With Open-GPU-Kernel Support, DRM Format Modifiers</a></header>
+							<div class="details">17 June 02:30 PM EDT - <a href="?page=news_topic&amp;q=NVIDIA">NVIDIA</a> - NVIDIA 515.49.05 Beta<span class="comments"> - <a href="/forums/node/1329344">3 Comments</a></span></div><p>NVIDIA today published the 515.49.05 beta driver as their first Vulkan beta driver update for Linux in one month and also their first re-base against the R515 series. As part of that re-base to the new series, this is the first Vulkan beta driver now supporting NVIDIA's new open-source GPU kernel driver.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Qt-6.4-Beta-Released">Qt 6.4 Beta Released With HTTP Server &amp; 3D Physics Modules</a></header>
+							<div class="details">17 June 07:23 AM EDT - <a href="?page=news_topic&amp;q=Qt">Qt</a> - Qt 6.4 Beta<span class="comments"> - <a href="/forums/node/1329290">15 Comments</a></span></div><p>On top of the other Qt announcements today, Qt 6.4 Beta was just released to begin testing on this next half-year update to the Qt6 tool-kit.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Raspberry-Pi-4-V3D-DRM-Next">Raspberry Pi 4 V3D Open-Source Kernel Driver Support Slated For Linux 5.20</a></header>
+							<div class="details">17 June 06:19 AM EDT - <a href="?page=news_topic&amp;q=Raspberry+Pi">Raspberry Pi</a> - Raspberry Pi 4 V3D<span class="comments"> - <a href="/forums/node/1329288">9 Comments</a></span></div><p>While the Raspberry Pi 4 has been out for nearly three years, only with the Linux 5.20 kernel later this summer is there anticipated to be the upstream open-source support within the V3D Direct Rendering Manager (DRM) driver.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Qt-New-Chief-Maintainer">Lars Knoll Announces His Successor For Qt Chief Maintainer</a></header>
+							<div class="details">17 June 05:54 AM EDT - <a href="?page=news_topic&amp;q=Qt">Qt</a> - New Qt Chief Maintainer<span class="comments"> - <a href="/forums/node/1329281">1 Comment</a></span></div><p>Last month was the surprise announcement that longtime Qt developer Lars Knoll would be leaving The Qt Company.  Not only is he leaving as the CTO of The Qt Company but also as the longtime Qt Chief Maintainer for the open-source project, but now after voting by Qt developers, a new maintainer has been chosen.</p>
+							
+						</article><article style="clear: both;">
+							<header><a href="?page=news_item&amp;px=Venus-Nice-Speed-Up">Mesa's Venus Vulkan Driver Gets A Very Sizable Speed-Up</a></header>
+							<div class="details">17 June 05:36 AM EDT - <a href="?page=news_topic&amp;q=Mesa">Mesa</a> - Much Faster Performance<span class="comments"> - <a href="/forums/node/1329271">21 Comments</a></span></div><p>Venus as the VirtIO-GPU Vulkan driver within Mesa and developed by Google engineers just received a nice speed-up.</p>
+							
+						</article><h1 style="margin: 30px 0 40px;"><a href="?page=recent">Past 30 Days Of News</a> | <a href="?page=phoronix_articles">Articles &amp; Reviews</a> | <a href="?page=phoronix_news">News Archives</a> | <a href="/rss.php">RSS Feed</a></h1>
+<!-- google_ad_section_end -->
+					</div>
+				</div>
+				<div id="sidebar-wrap">
+					<div id="sidebar">
+					    <aside>
+						<div style="text-align: center;">
+                           				<div align="center" id="phoronix_right_rail_1">
+  <script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "phoronix_right_rail_1", slotId: "phoronix_right_rail_1" });
+  </script>
+</div>
+                        </div>
+                        </aside>
+                        <aside class="widget">
+			<header>Most Popular News This Week</header><div class="popular-list">
+                                <a href="?page=news_item&amp;px=Arch-Linux-Bizarre-Zstd">The Bizarre Case Of Zstd's Very Slow Performance On Arch Linux</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Akamai-Security-Panchan">Akamai Warns Of &quot;Panchan&quot; Linux Botnet That Leverages Golang Concurrency, Systemd</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Rust-For-Linux-5.20-Possible">Linus Torvalds: Rust For The Kernel Could Possibly Be Merged For Linux 5.20</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Firefox-Snap-Performance-2">Canonical Continues Working On Ubuntu's Firefox Snap Performance</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Raspberry-Pi-4-V3D-DRM-Next">Raspberry Pi 4 V3D Open-Source Kernel Driver Support Slated For Linux 5.20</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Wine-7.11-Released">Wine 7.11 Released With Zero-Copy Support For GStreamer</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Godot-4.0-Alpha-10">Godot 4.0 Alpha 10 Brings Temporal AA</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=EPEL-Stats-Rocky-Linux-Surge">EPEL Statistics Show Recent Surge In Rocky Linux Usage Past AlmaLinux, CentOS Stream</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=NVIDIA-515.49.05-Linux-Beta">NVIDIA Vulkan Beta Driver Updated With Open-GPU-Kernel Support, DRM Format Modifiers</a>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=LibreOffice-7.4-Beta">LibreOffice 7.4 Beta Now Available With Performance Improvements, WebP Support</a>
+                            </div>
+<header>Popular In The Forums</header><div class="popular-list">
+                                <a href="/forums/node/1329923&amp;goto=newpost">Linus Torvalds: Rust For The Kernel Could Possibly Be Merged For Linux 5.20</a>
+                                <span class="comments">40 Comments</span>
+                            </div>
+<div class="popular-list">
+                                <a href="/forums/node/1329694&amp;goto=newpost">X Window System Turns 38 Years Old</a>
+                                <span class="comments">98 Comments</span>
+                            </div>
+<div class="popular-list">
+                                <a href="/forums/node/1329499&amp;goto=newpost">The Bizarre Case Of Zstd's Very Slow Performance On Arch Linux</a>
+                                <span class="comments">77 Comments</span>
+                            </div>
+<div class="popular-list">
+                                <a href="/forums/node/1329420&amp;goto=newpost">KDE Plasma 5.26 To Allow Crisper XWayland Apps With New Scaling Option</a>
+                                <span class="comments">41 Comments</span>
+                            </div>
+<div class="popular-list">
+                                <a href="/forums/node/1329100&amp;goto=newpost">Canonical Continues Working On Ubuntu's Firefox Snap Performance</a>
+                                <span class="comments">73 Comments</span>
+                            </div>
+                        </aside>
+			<aside>
+			<div style="text-align: center;">
+                          <div align="center" id="phoronix_right_rail_2">
+  <script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "phoronix_right_rail_2", slotId: "phoronix_right_rail_2" });
+  </script>
+</div>
+
+                        </div>
+                        </aside>
+			                        <aside class="widget">
+                       <header>Show Your Support, Go Premium</header>
+                       <p><a href="https://www.phoronix.com/scan.php?page=phoronix_premium">Phoronix Premium</a> allows ad-free access to the site, multi-page articles on a single page, and other features while supporting this site's continued operations.</p>
+                        </aside>
+			                        <aside class="widget">
+			<header>Latest Featured Articles</header><div class="popular-list">
+                                <a href="/vr.php?view=31229">Total War: WARHAMMER III Linux Performance Across 24 NVIDIA / AMD GPUs</a>
+                            </div>
+<div class="popular-list">
+                                <a href="/vr.php?view=31221">Amazon Graviton3 Compiler Tuning Benchmarks For The Arm Neoverse-V1 Cores</a>
+                            </div>
+<div class="popular-list">
+                                <a href="/vr.php?view=31214">The Performance Of Six Linux Distributions On The HP Dev One</a>
+                            </div>
+<div class="popular-list">
+                                <a href="/vr.php?view=31210">AlmaLinux 9 Running Well, Performance On Par With RHEL 9.0</a>
+                            </div>
+<div class="popular-list">
+                                <a href="/vr.php?view=31208">AMD HIP vs. NVIDIA CUDA vs. NVIDIA OptiX On Blender 3.2</a>
+                            </div>
+<header>Popular Articles In The Past</header><div class="popular-list">
+                                <a href="?page=news_item&amp;px=Rust-For-Linux-5.20-Possible">Linus Torvalds: Rust For The Kernel Could Possibly Be Merged For Linux 5.20</a>
+                                <span class="comments">Yesterday</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Akamai-Security-Panchan">Akamai Warns Of &quot;Panchan&quot; Linux Botnet That Leverages Golang Concurrency, Systemd</a>
+                                <span class="comments">7 Days Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Linux-5.19-Features-Expected">Linux 5.19 Will Be Super Exciting For Intel Customers, Many Other Features Expected</a>
+                                <span class="comments">One Month Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Manjaro-21.2-Released">Manjaro 21.2 Released With Better Btrfs Support, Linux 5.15 LTS Powered</a>
+                                <span class="comments">Six Months Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=NVIDIA-Releases-DLSS-Linux">NVIDIA Posts 470 Linux Driver Beta With Better Wayland Support, DLSS + Improved PRIME</a>
+                                <span class="comments">One Year Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Apple-Going-In-House-Silicon">Apple Confirms Their Future Desktops + Laptops Will Use In-House CPUs</a>
+                                <span class="comments">Two Years Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Steam-Linux-Network-One-Line">A One Line Kernel Patch Appears To Solve The Recent Linux + Steam Networking Regression</a>
+                                <span class="comments">Three Years Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=Ubuntu-17.10-GDM-Proceeding">Ubuntu 17.10 Proceeding With Transition From LightDM To GDM</a>
+                                <span class="comments">Five Years Ago</span>
+                            </div>
+<div class="popular-list">
+                                <a href="?page=news_item&amp;px=MTEyNTE">NVIDIA Loses Huge GPU Order Due To Linux Blob</a>
+                                <span class="comments">Ten Years Ago</span>
+                            </div>
+                        </aside>
+			<aside>
+						<div style="text-align: center;">
+                           				<div style="position: sticky; top: 0; position: -webkit-sticky;"><div align="center" id="phoronix_right_rail_3">
+  <script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "phoronix_right_rail_3", slotId: "phoronix_right_rail_3" });
+  </script>
+</div>
+
+</div>                       				 </div>
+                        </aside>
+                        <aside class="widget">
+                            <header>Support Phoronix</header>
+                            <p>The mission at Phoronix since 2004 has centered around enriching the Linux hardware experience. In addition to supporting our site through advertisements, you can help by <a href="?page=phoronix_premium">subscribing to Phoronix Premium</a>. You can also contribute to Phoronix through a <a href="https://www.paypal.com/donate/?hosted_button_id=EA79CCDLNFJNW">PayPal tip</a>.</p>
+                        </aside>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+		    <div id="footer-content">
+			<p align="center"></p>
+		        <div id="footer-left">
+		        <div id="footer-left-content">
+		            <div class="extra-info">
+		                <header>Phoronix Media</header>
+		                <hr/>
+		                <ul>
+		                    <li><a href="https://openbenchmarking.org/">OpenBenchmarking.org</a></li>
+		                </ul>
+		            </div>
+		            <div class="extra-info">
+		                <header>Phoronix Premium</header>
+		                <hr/>
+		                <a href="?page=phoronix_premium"><ul>
+                            <li>Support Phoronix</li>
+		                    <li>While Having Ad-Free Browsing,</li>
+                            <li>Single-Page Article Viewing</li>
+                        </ul></a>
+		            </div>
+		            <div class="extra-info">
+		                <header>Share</header>
+		                <hr/>
+		                <ul>
+		                    <li><a href="https://facebook.com/Phoronix">Facebook</a></li>
+		                    <li><a href="https://twitter.com/Phoronix">Twitter</a></li>
+		                </ul>
+		            </div>
+		       </div>
+		       </div>
+		       <div id="footer-right">
+		            <div class="extra-info">
+		                <ul>
+		                <li><p><a href="?page=legal">Legal Disclaimer, Privacy Policy</a> | <a href="https://www.phoronix-media.com/?k=contact">Contact</a></p></li>
+                        <li><p>Copyright &copy; 2004 - 2022 by <a href="https://www.phoronix-media.com/">Phoronix Media</a>.</p></li>
+                        <li><p>All trademarks used are properties of their respective owners. All rights reserved.</p></li>
+				</ul>
+		            </div>
+		        </div>
+		     </div>		   
+		</div>
+		<script type="text/javascript">
+		    function lmm () {
+		        if (litemenu.style.zIndex > 0)
+		            litemenu.style.zIndex = -1;
+		        else
+		            litemenu.style.zIndex = 1;
+		    }
+		    	    
+            menubutton.addEventListener('click', function() { lmm(); }, false);
+            closelid.addEventListener('click', function() { litemenu.style.zIndex = -1;}, false);
+		</script>
+	</body>
+</html>
